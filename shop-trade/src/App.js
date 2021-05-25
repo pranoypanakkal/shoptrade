@@ -18,15 +18,6 @@ function App() {
 
   console.log(itemsInCart);
 
-  useEffect(() => {
-    // Incorrect Json returned so json has been saved in list.js
-    // axios
-    //   .get(
-    //     "https://cdn.shopify.com/s/files/1/0455/2176/4502/files/products.json"
-    //   )
-    //   .then((res) => console.log(res));
-  }, []);
-
   const filter = useCallback((filterItem) => {
     if (filterItem === "All") {
       setListOfProducts(data);
